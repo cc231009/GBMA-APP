@@ -1,0 +1,47 @@
+import React from 'react';
+
+const MyComponent = () => {
+    return (
+        <div>
+            <div className="container-knob-2">
+                <div id="progress-bar-2">
+                    <div id="grey-circle"></div>
+                    <div id="blue-circle"></div>
+                </div>
+                <div id="box-2" className="box">
+                    <div className="circle">
+                        <div id="dot-2" className="dot"></div>
+                    </div>
+                </div>
+                <p className="knob-description">Volume</p>
+            </div>
+            <div className="container-knob-3">
+                <div id="progress-bar-3">
+                    <div id="white-circle"></div>
+                    <div id="yellow-circle"></div>
+                </div>
+                <div id="box-3" className="box">
+                    <div className="circle">
+                        <div id="dot-3" className="dot"></div>
+                    </div>
+                </div>
+                <p className="knob-description">Mood</p>
+            </div>
+          
+            <div className="middle">
+                <div className="slider-container">
+                    <p className="slider-label">Intensity</p>
+                    <span className="bar"><span className="fill"></span></span>
+                    <input id="slider" className="slider" type="range" min="0" max="100" value="50" />
+                </div>
+                <div className="slider-container">
+                    <p className="slider-label">Weather</p>
+                    <span className="bar"><span className="fill"></span></span>
+                    <input id="slider2" className="slider" type="range" min="0" max="100" value="50" />
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default MyComponent;
